@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Angular Polling Tool</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="polls" ng-controller="pollsCtrl">
+  <form ng-submit="add()">
+    <p>Enter Your <i class="z">(yes/no)</i> Quesion<i class="z">(poll)</i>...</p>
+    <input class="fl" type="text" ng-model="nameInput"/>
+    <input class="b" type="submit" />
+  </form>
+  <div class="sweet" ng-repeat="x in pollList">
+    <div class="poll">
+    <div class="stats">
+      <p><i ng-bind="x.yes"></i> voted yes & <i ng-bind="x.no"></i> voted no</p>
+    </div>
+    <span class="name" ng-bind="x.name"></span>
+    <div class="v">
+      <span class="g" ng-bind="x.yes"></span>
+      <p class="g">voted yes</p>
+      <button ng-click="yes(x.name)" class="y">yes</button>
+    </div>
+    <div class="v">
+      <span class="r" ng-bind="x.no"></span>
+      <p class="r">voted no</p>
+      <button  ng-click="no(x.name)" class="n">no</button>
+    </div>
+  </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>

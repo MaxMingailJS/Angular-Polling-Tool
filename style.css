@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700|Raleway:400,300,500);
+body {
+  background: #EEEEEE;
+}
+form {
+  width: 90%;
+  padding: 15px 0px;
+  margin: 30px auto;
+  background: white;
+}
+form p {
+  font-family: Raleway;
+  margin-left: 30px;
+  color: #212121;
+}
+input:focus {
+  outline: none;
+}
+form input {
+  margin-left: 30px;
+  padding: 6px 12px;
+  border: solid 3px #212121;
+  border-radius: 6px;
+}
+form .fl {
+  width: 75%;
+  max-width: 500px;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.b {
+  color: #424242;
+  border: solid 3px #424242;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: none;
+  display: block;
+  margin: 15px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.sweet {
+  width: 90%;
+  margin: auto;
+}
+.poll {
+  width: 48%;
+  float: left;
+  text-align: center;
+  font-family: Lato;
+  background: #FAFAFA;
+  margin: 15px 1%;
+}
+.poll .stats {
+  background: #03A9F4;
+}
+.poll .stats p {
+  margin: 0px;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 700;
+  font-family: Raleway;
+  padding: 5px 0px;
+}
+.poll .name {
+  width: 100%;
+  display: block;
+  color: #212121;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 30px;
+}
+.poll span:first-child {
+  width: 100%;
+  display: block;
+}
+.poll .v {
+  display: inline-block;
+}
+.poll .v {
+  padding: 15px 5px;
+}
+span {
+  color: #9E9E9E;
+}
+p {
+  color: #BDBDBD;
+}
+.g {
+  color: #00C853;
+}
+.r {
+  color: #d50000;
+}
+.y {
+  color: #00C853;
+  border: solid 3px #00C853;
+  background: none;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+.n {
+  color: #d50000;
+  border: solid 3px #d50000;
+  background: none;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+button {
+  cursor: pointer;
+}
+.z {
+  color: #BDBDBD;
+}
+button:focus {
+  outline: none;
+}
+@media screen and (max-width: 900px) {
+  .poll {
+    width: 98%;
+  }
+}
